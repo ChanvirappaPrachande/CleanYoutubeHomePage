@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Clean YouTube HomePage</title>
+    <title>Manage Lists</title>
   </head>
   <body>
-    <h2>Clean YouTube</h2>
-    <p>YouTube homepage without distractions!</p>
-    <button id="refresh">Refresh</button>
+    <h3>Manage Lists</h3>
+    <select id="listType">
+      <option value="bookmarks">Bookmarks</option>
+      <option value="favorites">Favorites</option>
+      <option value="playlists">Playlists</option>
+      <option value="channels">Channels</option>
+    </select>
+    <ul id="listItems"></ul>
+    <input type="text" id="title" placeholder="Title" />
+    <input type="url" id="url" placeholder="URL" />
+    <button id="addItem">Add</button>
     <script src="popup.js"></script>
   </body>
 </html>

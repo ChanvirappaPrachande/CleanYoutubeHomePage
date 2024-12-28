@@ -1,9 +1,36 @@
-/* Hide main sections immediately */
-#primary,
-#secondary,
-#related,
+/* Hide YouTube's default recommendations */
 ytd-rich-grid-renderer,
-ytd-item-section-renderer,
-ytd-browse {
+ytd-browse[page-subtype="home"] ytd-two-column-browse-results-renderer {
   display: none !important;
+}
+
+/* Custom Sections */
+.custom-sections {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Section Titles */
+.custom-section h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Video Grid */
+.video-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.video-grid a {
+  text-decoration: none;
+  color: #0366d6;
+  font-size: 1em;
+}
+
+.video-grid a:hover {
+  text-decoration: underline;
 }

@@ -1,3 +1,7 @@
+# Note
+
+The extension is stage 2 of development where I am trying to create custom homepage. And different layout.
+
 # Clean YouTube HomePage
 
 **Clean YouTube HomePage** is a lightweight Chrome extension that hides YouTube homepage video recommendations and related content to help users focus and avoid distractions.

@@ -2,21 +2,34 @@
   "manifest_version": 3,
   "name": "Clean Youtube HomePage",
   "version": "1.0",
-  "description": "an extension that loads youtube homepage without any distractions",
+  "description": "An extension that loads YouTube homepage without any distractions.",
   "permissions": ["activeTab", "scripting"],
+
+  "host_permissions": ["https://www.youtube.com/*"],
+
   "action": {
     "default_popup": "index.html",
-    "default_icon": "cleanyoutube.png"
+    "default_icon": {
+      "16": "cleanyoutube.png",
+      "48": "cleanyoutube.png",
+      "128": "cleanyoutube.png"
+    }
   },
+
   "content_scripts": [
     {
       "matches": ["*://www.youtube.com/*"],
       "js": ["content.js"]
     }
   ],
+
   "icons": {
     "16": "cleanyoutube.png",
     "48": "cleanyoutube.png",
     "128": "cleanyoutube.png"
+  },
+
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
   }
 }

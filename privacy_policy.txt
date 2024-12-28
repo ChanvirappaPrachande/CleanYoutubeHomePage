@@ -1,0 +1,7 @@
+Privacy Policy:
+
+This extension does not collect, store, or share any personal data. All processing occurs locally on your device, and no information is transmitted to external servers.
+
+The extension only hides YouTube homepage recommendations and sidebar content to reduce distractions. It does not interact with user accounts, browsing history, or any other data.
+
+If you have questions, contact the developer at: chanvirappa1@gmail.com

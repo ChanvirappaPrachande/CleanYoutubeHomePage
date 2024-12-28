@@ -1,0 +1,9 @@
+/* Hide main sections immediately */
+#primary,
+#secondary,
+#related,
+ytd-rich-grid-renderer,
+ytd-item-section-renderer,
+ytd-browse {
+  display: none !important;
+}
